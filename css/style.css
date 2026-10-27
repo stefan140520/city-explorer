@@ -1,0 +1,164 @@
+/* Reset și modelul cutiei */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+}
+
+/* 1. Antetul cu Flexbox */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #1f3b5d;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Structura paginii și secțiunile */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1f3b5d;
+    border-bottom: 2px solid #d0d7e2;
+    padding-bottom: 8px;
+}
+
+/* 3. Grid pentru destinații (carduri) cu adaptare responsivă */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #d0d7e2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 4. Stil pentru cardul evidențiat (featured) */
+.card.featured {
+    border: 2px solid #5b3fd9;
+    background-color: #f3f0ff;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1f3b5d;
+}
+
+.card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* 2. Formularul stilizat (câmpurile unul sub altul, lățime maximă) */
+.booking-form {
+    background-color: #ffffff;
+    padding: 24px;
+    border: 1px solid #d0d7e2;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.booking-form input,
+.booking-form select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #d0d7e2;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #5b3fd9;
+}
+
+.booking-form button {
+    background-color: #1f3b5d;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.booking-form button:hover {
+    background-color: #2c5282;
+}
+
+/* Recomandări (listă) */
+#recomandari ul {
+    padding-left: 20px;
+    background-color: #ffffff;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #d0d7e2;
+    border-radius: 10px;
+}
+
+#recomandari li {
+    margin-bottom: 8px;
+}
+
+/* Subsol */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f3b5d;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
